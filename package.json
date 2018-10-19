@@ -1,0 +1,44 @@
+{
+  "name": "bendrocorp-alexa",
+  "version": "1.0.0",
+  "description": "A TS/JS implementation of Timespans",
+  "main": "bendrocorp-alexa.umd.js",
+  "jsnext:main": "bendrocorp-alexa.esm.js",
+  "module": "bendrocorp-alexa.esm.js",
+  "types": "bendrocorp-alexa.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenygh0st/bendrocorp-alexa2.git"
+  },
+  "author": "Dale Myszewski <dale@daleslab.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greenygh0st/bendrocorp-alexa2/issues"
+  },
+  "homepage": "https://github.com/greenygh0st/bendrocorp-alexa2#readme",
+  "devDependencies": {
+    "@types/node": "^10.10.2",
+    "del": "^3.0.0",
+    "ncp": "^2.0.0",
+    "rollup-copy-plugin": "^0.1.0",
+    "rollup-plugin-angular": "^0.4.4",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "tslib": "^1.9.3",
+    "typescript": "^2.9.0"
+  },
+  "dependencies": {
+    "ask-sdk": "^2.0.9",
+    "axios": "^0.18.0",
+    "moment": "^2.22.2",
+    "rxios": "^1.1.2",
+    "rxjs": "^6.3.2",
+    "rxjs-compat": "^6.3.2"
+  }
+}
