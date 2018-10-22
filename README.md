@@ -20,9 +20,11 @@ or
 npm run build (If you are a non-*nix)
 
 ### Development
+All of the most current versions of:
 - node
 - npm
 - yarn (if you yarn)
+- typescript
 
 ### Dep Documentation
 - https://github.com/davguij/rxios
