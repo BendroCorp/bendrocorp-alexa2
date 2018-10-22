@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { Rxios } from 'rxios'
+import axios, { AxiosPromise } from 'axios';
 import { User } from '../models/user.model';
 import { Globals } from '../globals'
 import { Event } from '../models/events.model';
@@ -12,20 +13,24 @@ export class ApiService
 
     constructor(private globals:Globals) { }
 
-    me(accessToken:string) : Observable<User>
+    me(accessToken:string) : AxiosPromise<User> //Observable<User>
     {
-        let http = new Rxios({ headers: { 'Authorization': 'Basic ' + accessToken, 'Accept': 'application/json' } })
-        return http.get<User>(`${this.globals.baseUrl}/api/user/me`).pipe(
-            tap(results => console.log())
-        )
+        // let http = new Rxios({ headers: { 'Authorization': 'Basic ' + accessToken, 'Accept': 'application/json' } })
+        // return http.get<User>(`${this.globals.baseUrl}/api/user/me`).pipe(
+        //     tap(results => console.log())
+        // )
+        const http = axios.create({ headers: { 'Authorization': 'Basic ' + accessToken, 'Accept': 'application/json' } })
+        return http.get<User>(`${this.globals.baseUrl}/api/user/me`)
     }
 
-    events(accessToken:string) : Observable<Event[]>
+    events(accessToken:string) : AxiosPromise<Event[]> //Observable<Event[]>
     {
-        let http = new Rxios({ headers: { 'Authorization': 'Basic ' + accessToken, 'Accept': 'application/json' } })
-        return http.get<Event[]>(`${this.globals.baseUrl}/events`).pipe(
-            tap(results => console.log())
-        )
+        // let http = new Rxios({ headers: { 'Authorization': 'Basic ' + accessToken, 'Accept': 'application/json' } })
+        // return http.get<Event[]>(`${this.globals.baseUrl}/events`).pipe(
+        //     tap(results => console.log())
+        // )
+        const http = axios.create({ headers: { 'Authorization': 'Basic ' + accessToken, 'Accept': 'application/json' } })
+        return http.get<Event[]>(`${this.globals.baseUrl}/events`)
     }
 
     approvals(accessToken:string) : Observable<ApprovalApprover[]>

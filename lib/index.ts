@@ -19,6 +19,7 @@ exports.handler = SkillBuilders.custom()
     ApprovalsRequestHandler,
     ManageApprovalsRequestHandler,
     EltrapRequestHandler,
+    WhoAmIRequestHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler,
   )

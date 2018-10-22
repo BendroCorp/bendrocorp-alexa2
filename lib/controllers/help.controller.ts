@@ -38,6 +38,7 @@ export const SessionEndedRequestHandler : RequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'SessionEndedRequest';
   },
   handle(handlerInput : HandlerInput) : Response {
+    console.log(handlerInput)
     console.log(`Session ended with reason: ${(handlerInput.requestEnvelope.request as SessionEndedRequest).reason}`);
 
     return handlerInput.responseBuilder.getResponse();

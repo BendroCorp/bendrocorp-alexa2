@@ -12,7 +12,7 @@ export const EltrapRequestHandler : RequestHandler = {
       return handlerInput.responseBuilder
         .speak(speechText)
         .reprompt(speechText)
-        .withSimpleCard('Hello World', speechText)
+        // .withSimpleCard('Hello World', speechText)
         .getResponse();
     },
   };
