@@ -3,7 +3,7 @@ import { Character } from "./character.model";
 export class Claim
 {
     id?:number;
-    title?:string;
+    name?:string;
 }
 
 export class User 
