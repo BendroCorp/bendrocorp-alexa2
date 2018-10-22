@@ -18,4 +18,10 @@ cp package.json ./dist
 # copy node_modules to dist
 cp -R node_modules dist/node_modules/
 
+# zip the files
+echo Creating 
+cd ./dist
+zip -r dist.zip .
+
+
 echo Build Finished
