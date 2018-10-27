@@ -10,7 +10,9 @@ export class PhraseService
     "Remember that mining lasers are lasers - they should not be aimed at anything you do not intend to 'mine'",
     "As a reminder, boarding a system security station is a crime - so you shouldn't do it. Really do not do it...",
     "Remember that recommended landing speed is 10 meters per second. Not 150.",
-    "As a reminder, just because you can ram a ship into something does not mean that you should. Ever."
+    "As a reminder, just because you can ram a ship into something does not mean that you should. Ever.",
+    "Remember the bigger the ship, the louder it rips, the longer the trip, the more people who want to see you whipped.",
+    "Remember when you are leaving the scene, don't ram into a Big Benny's Machine."
     ];
 
     /**
