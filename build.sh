@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Generate build output for deploy environment
-echo Starting Build
+echo Starting Alexa Skill Build
 
 # get rid of the old dist folder
 rm -rf ./dist
@@ -24,4 +24,4 @@ cd ./dist
 zip -r dist.zip .
 
 
-echo Build Finished
+echo "Build Finished. Look for dist.zip in the dist folder"
