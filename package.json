@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "ask-sdk": "^2.0.9",
-    "axios": "^0.18.0",
+    "axios": "^0.19.0",
     "moment": "^2.22.2",
     "rxios": "^1.1.2",
     "rxjs": "^6.3.2",

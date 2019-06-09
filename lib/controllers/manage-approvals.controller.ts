@@ -36,8 +36,8 @@ export const ManageApprovalsRequestHandler : RequestHandler = {
         return new Promise((resolve, reject) => {
           resolve(handlerInput.responseBuilder.addDelegateDirective().getResponse())
         })
-      }else{
-
+      } else {
+        // do nothing
       }
 
       // if everything is done then we should be done

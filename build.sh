@@ -24,4 +24,4 @@ cd ./dist
 zip -r dist.zip .
 
 
-echo "Build Finished. Look for dist.zip in the dist folder"
+echo "Build Finished. Look for dist.zip in the dist folder if you are wanting to push it out live!"

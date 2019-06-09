@@ -1,4 +1,9 @@
 export class StatusMessage
 {
-    message?:string;
+    message?: string;
+}
+
+export class PendingApprovalCount
+{
+    count: number;
 }
