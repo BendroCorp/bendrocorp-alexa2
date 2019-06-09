@@ -8,10 +8,11 @@ import { CancelAndStopIntentHandler, SessionEndedRequestHandler } from './contro
 import { ManageApprovalsRequestHandler } from './controllers/manage-approvals.controller'
 import { EltrapRequestHandler } from './controllers/misc.controller'
 import { WhoAmIRequestHandler } from './controllers/who-am-i.controller'
+import { OverrideApprovalsRequestHandler } from './controllers/override-approvals.controller'
+import { OverrideApprovalRequestHandler } from './controllers/override-approval.controller'
 import { LambdaHandler } from 'ask-sdk-core/dist/skill/factory/BaseSkillFactory';
 import { CustomErrorHandler } from './controllers/error.controller'
 import { DialogState } from 'aws-sdk/clients/lexruntime';
-import { RequestInterceptor } from 'ask-sdk-runtime';
 
 // TODO: Research this method rather than doing dialog handling per controller
 // const DialogResponseInterceptor : ResponseInterceptor = {
@@ -46,6 +47,8 @@ exports.handler = SkillBuilders.custom()
     ManageApprovalsRequestHandler,
     EltrapRequestHandler,
     WhoAmIRequestHandler,
+    OverrideApprovalsRequestHandler,
+    OverrideApprovalRequestHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler,
   )
